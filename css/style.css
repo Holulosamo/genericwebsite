@@ -41,14 +41,14 @@ body{
 }
 
 .header__title{
-    padding-left: 20px;
+    padding-left: 30px;
     font-family: var(--ff-ss);
 }
 
 .menu-button{
 
     height: 100%;
-    padding-right: 15px;
+    padding-right: 30px;
     font-size: var(--fs-600);
 }
 
