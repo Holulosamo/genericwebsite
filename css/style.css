@@ -179,12 +179,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20%;
     min-width: 280px;
     max-width: 280px;
-    margin: 6em 6.7em;
+    margin: 6em 10%;
     border-radius: 1em;
-    /* border: thin solid rgb(138, 136, 136); */
-    box-shadow: 1px 0 6px #000;
     font-family: 'Segoe UI', 'Segoe UI', 'Segoe UI', 'Seg';
     font-size: 1rem;
 }
@@ -193,6 +192,12 @@ body{
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     width: 100%;
+}
+
+.card-text-container{
+    text-align: center;
+    width: 100%;
+    box-shadow: .1rem 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-title{
@@ -209,7 +214,6 @@ body{
 }
 
 .card-button{
-    display: block;
     padding: 2rem 0;
     width: 100%;
     border-bottom-left-radius: inherit;
