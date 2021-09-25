@@ -20,8 +20,8 @@
         </div>
         <nav class="nav">
             <ul class="menu">
-                <li class="menu__list"><a href="#" class="menu__link">Seccion 1</a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Seccion 2</a></li>
+                <li class="menu__list"><a href="#Inicio" class="menu__link">Inicio</a></li>
+                <li class="menu__list"><a href="#Cursos" class="menu__link">Cursos</a></li>
                 <li class="menu__list"><a href="#" class="menu__link">Seccion 3</a></li>
                 <li class="menu__list"><a href="#" class="menu__link">Seccion 4</a></li>
             </ul>
@@ -31,8 +31,8 @@
 
     
     <main class="main">
-        <section class="sections  section-1" id="Text">
-            <article class="article-1">
+        <section class="sections  section-presentation" id="Inicio">
+            <article class="article-presentation">
                 <h2 class="title">Titulo</h2>
                 <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, tempora quos error, enim veritatis alias pariatur consectetur velitfugit autem soluta odit. Optio reprehenderit ducimus laboriosam soluta, eveniet ut et.</p>
                 <a href="#" class="btn">BUTTON</a>
@@ -40,53 +40,61 @@
         </section>  
 
 
-        <section class="sections cards-container" id="Cards">
-            <article class="cards-container__items">
-                <img src="https://www.placeimg.com/200/150/tech" alt="" class="card-img">
-                <div class="card-text-container">
+        <section class="sections section-cards" id="Cursos">
+            <h2 class="section-cards__title">Titulo</h2>
+            <div class="cards-container">
+                <article class="cards-container__items">
+                    <img src="assets/html.png" alt="html" class="card-img">
                     <h2 class="card-title">Titulo</h2>
                     <p class='card-text'>Parrafo</p>
-                </div>
-                <a href="#" class="card-button">Boton</a>
-            </article>
-            <article class="cards-container__items">
-                <img src="https://www.placeimg.com/200/150/tech" alt="" class="card-img">
-                <div class="card-text-container">
+                <a href="#" class="card-button  html">Boton</a>
+                </article>
+                <article class="cards-container__items">
+                    <img src="assets/css.jpeg" alt="css" class="card-img">
                     <h2 class="card-title">Titulo</h2>
                     <p class='card-text'>Parrafo</p>
-                </div>
-                <a href="#" class="card-button">Boton</a>
-            </article>
-            <article class="cards-container__items">
-                <img src="https://www.placeimg.com/200/150/tech" alt="" class="card-img">
-                <div class="card-text-container">
+                    <a href="#" class="card-button  css">Boton</a>
+                </article>
+                <article class="cards-container__items">
+                    <img src="assets/javascript.png" alt="javascript" class="card-img">
                     <h2 class="card-title">Titulo</h2>
                     <p class='card-text'>Parrafo</p>
-                </div>
-                <a href="#" class="card-button">Boton</a>
-            </article>
-            <article class="cards-container__items">
-                <img src="https://www.placeimg.com/200/150/tech" alt="" class="card-img">
-                <div class="card-text-container">
+                    <a href="#" class="card-button  js">Boton</a>
+                </article>
+                <article class="cards-container__items">
+                    <img src="assets/react.png" alt="react" class="card-img">
                     <h2 class="card-title">Titulo</h2>
                     <p class='card-text'>Parrafo</p>
-                </div>
-                <a href="#" class="card-button">Boton</a>
-            </article>
-            <article class="cards-container__items">
-                <img src="https://www.placeimg.com/200/150/tech" alt="" class="card-img">
-                <div class="card-text-container">
+                    <a href="#" class="card-button  react">Boton</a>
+                </article>
+                <article class="cards-container__items">
+                    <img src="assets/sass.png" alt="sass" class="card-img">
                     <h2 class="card-title">Titulo</h2>
                     <p class='card-text'>Parrafo</p>
-                </div>
-                <a href="#" class="card-button">Boton</a>
-            </article>
+                    <a href="#" class="card-button  sass">Boton</a>
+                </article>
+                <article class="cards-container__items">
+                    <img src="assets/node.png" alt="node" class="card-img">
+                    <h2 class="card-title">Titulo</h2>
+                    <p class='card-text'>Parrafo</p>
+                    <a href="#" class="card-button  node">Boton</a>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="contact-form-container">
+            <h2 class="form-title">¡Contactanos!</h2>
+            <form class="contact-form">
+                <input name="name" type="text" class="contact-form-input  name" required>
+                <input name="email" type="email" class="contact-form-input  email" required>
+                <textarea name="messge" class="contact-form-input  message"></textarea>
+                <input type="submit" class="contact-form-input  send">
+            </form>
+        </div>
+        <p class="footer-copyright">&copy Elías I. Rodriguez</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
