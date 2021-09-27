@@ -4,7 +4,7 @@
     --purple: #511378;
     --dark-purple: #371777;
     --light-yellow: #E6C16E;
-    --black: #333;
+    --black: #242424;
     --pink: #ff05de;
 
     --fs-800: 2rem;
@@ -117,7 +117,7 @@ body{
     display: block;
     width: 100%;
     height: 4rem;
-    background-color: var(--dark-purple);
+    background-color: var(--black);
 }
 
 .article-presentation{
@@ -164,6 +164,7 @@ body{
 }
 
 .section-cards__title{
+    padding: 2em;
     font-size: var(--fs-700);
 }
 
@@ -171,22 +172,18 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, 240px);
     justify-content: center;
+    align-items: flex-start;
     gap: 5em;
-    padding: 0 15vw 15vh;
+    padding: 0 5vw 30vh;
 }
 
 .cards-container__items{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1em;
-    box-shadow: .1rem 0 .5em rgba(0, 0, 0, 0.5);
+    box-shadow: .5em .2em .5rem 2px rgba(0 0 0 / .2);
     font-family: 'Segoe UI', 'Segoe UI', 'Segoe UI', 'Seg';
     font-size: 1rem;
 }
 
 .card-img{
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
     width: 100%;
 }
 
@@ -203,14 +200,13 @@ body{
 }
 
 .card-button{
-    padding: 1.5rem 0;
+    display: block;
+    padding: 1em 0;
     width: 100%;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
     text-align: center;
     text-decoration: none;
     font-family: inherit;
-    font-size: var(--fs-700);
+    font-size: var(--fs-600);
     color: var(--white);
 }
 
@@ -243,17 +239,37 @@ body{
     position: absolute;
     bottom: 0;
     align-items: center;
+    /* margin-top: 10vh; */
     width: 100%; 
     background: var(--dark-purple);
     /* min-height: 100vh;    */
 }
 
 .contact-form-container{
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+}
+
+.form-title{
+    font-size: var(--fs-700);
 }
 
 .contact-form-input{
     display: block;
+    margin: 2em auto;
+}
+
+.name, .email, .message{
+    width: 70%;
+    height: 30px;
+    max-width: 350px;
+    font-family: inherit;
+}
+
+.message{
+    height: 150px;
+    resize: none;
 }
 
 .footer-copyright{
