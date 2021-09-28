@@ -1,10 +1,10 @@
 :root{
-    --orange: #DBB076;
     --white: #FCFBF5;
     --purple: #511378;
     --dark-purple: #371777;
-    --light-yellow: #E6C16E;
-    --black: #242424;
+    --black: #101010;
+    --red: #e93636;
+    --green: #52d352;
     --pink: #ff05de;
 
     --fs-800: 2rem;
@@ -136,12 +136,12 @@ body{
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: var(--fs-600);
+    font-weight: 400;
 }
 
 .btn{
@@ -164,7 +164,8 @@ body{
 }
 
 .section-cards__title{
-    padding: 2em;
+    margin-top: 0;
+    padding: .2em;
     font-size: var(--fs-700);
 }
 
@@ -174,7 +175,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 5em;
-    padding: 0 5vw 30vh;
+    padding: 0 5vw 60vh;
 }
 
 .cards-container__items{
@@ -238,20 +239,42 @@ body{
 .footer{
     position: absolute;
     bottom: 0;
-    align-items: center;
-    /* margin-top: 10vh; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    min-height: 100vh;   
+    padding-top: 5rem;
     width: 100%; 
-    background: var(--dark-purple);
-    /* min-height: 100vh;    */
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--black);
+}
+
+.social-media{
+    text-align: center;
+}
+
+.social-list__items{
+    display: inline;
+    font-size: var(--fs-600);
+    margin: 0 .5em;
+    list-style: none;
+    text-align: center;
+}
+
+.social-list__links{
+    color: inherit;
 }
 
 .contact-form-container{
-    color: var(--white);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: 3rem auto 0;
     text-align: center;
 }
 
 .form-title{
+    margin: 0;
     font-size: var(--fs-700);
 }
 
@@ -262,7 +285,7 @@ body{
 
 .name, .email, .message{
     width: 70%;
-    height: 30px;
+    height: 40px;
     max-width: 350px;
     font-family: inherit;
 }
@@ -272,11 +295,16 @@ body{
     resize: none;
 }
 
+.copyright{
+    margin-top: auto;
+    background-color: #151515;
+}
+
 .footer-copyright{
+    margin-left: 1.7em;
     font-size: var(--fs-400);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--white);
-    text-align: center;
 }
 
 .btn:active{
