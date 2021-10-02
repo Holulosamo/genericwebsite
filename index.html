@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="normalize.css">
     <script src="https://kit.fontawesome.com/12531dd9e9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,28 +83,32 @@
     </main>
 
     <footer class="footer" id="Footer">
+
         <div class="social-media">
-            <p class="social-media__text">Nuestras redes sociales</p>
             <ul class="social-list">
-                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-instagram"></i></a></li>
-                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-twitter"></i></a></li>
-                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-linkedin-in"></i></a></li>
-                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-github"></i></a></li>
+                <li class="social-list__items"><p class="social-media__text">Nuestras redes sociales</p></li>
+                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-instagram  icons"></i></a></li>
+                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-twitter  icons"></i></a></li>
+                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-linkedin-in  icons"></i></a></li>
+                <li class="social-list__items"><a href="#" class="social-list__links"><i class="fab fa-github  icons"></i></a></li>
             </ul>
         </div>
+
+
         <div class="contact-form-container">
             <h3 class="form-title">Contactanos</h3>
             <form class="contact-form">
-                <input name="name" type="text" class="contact-form-input  name" placeholder="Ingresa tu nombre" required>
-                <input name="email" type="email" class="contact-form-input  email" placeholder="Ingresa tu correo electrónico" required>
-                <textarea name="message" class="contact-form-input  message" placeholder="Ingresa un mensaje"></textarea>
+                <input name="name" type="text" class="contact-form-input text-inputs name" placeholder="Ingresa tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜüs ]+$" title="Tú nombre no debe contener numeros" required>
+                <input name="email" type="email" class="contact-form-input text-inputs email" placeholder="Ingresa tu correo electrónico" pattern="^[a-z0-9_]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Ingresa un correo electrónico valido" required>
+                <textarea name="message" class="contact-form-input text-inputs message" placeholder="Dejanos tu mensaje" data-pattern="^.{1,255}$" title="El mensaje no debe sobrepasar los 255 caracterés" required></textarea>
                 <input type="submit" class="contact-form-input  send">
             </form>
+            <span class="sending none">Enviando...</span>
         </div>
         <div class="copyright">
             <p class="footer-copyright">&copy Elías I. Rodriguez. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 </html>

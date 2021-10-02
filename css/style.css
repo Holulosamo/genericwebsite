@@ -175,7 +175,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 5em;
-    padding: 0 5vw 60vh;
+    padding: 0 5vw 50em;
 }
 
 .cards-container__items{
@@ -243,8 +243,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    min-height: 100vh;   
-    padding-top: 5rem;
+    min-height: 80vh;   
     width: 100%; 
     color: var(--white);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -252,8 +251,10 @@ body{
 }
 
 .social-media{
+    padding: 0 .2em;
     text-align: center;
 }
+
 
 .social-list__items{
     display: inline;
@@ -261,6 +262,10 @@ body{
     margin: 0 .5em;
     list-style: none;
     text-align: center;
+}
+
+.social-media__text{
+    padding: 0 1em;
 }
 
 .social-list__links{
@@ -274,25 +279,64 @@ body{
 }
 
 .form-title{
-    margin: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     font-size: var(--fs-700);
 }
 
 .contact-form-input{
     display: block;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
-.name, .email, .message{
+.name, .email, .message, .send{
     width: 70%;
     height: 40px;
     max-width: 350px;
     font-family: inherit;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .message{
     height: 150px;
     resize: none;
+}
+
+.send{
+    background-color: #f00;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form [required]:valid{
+    border: thin solid var(--green);
+}
+
+.contact-form [required]:invalid{
+    border: thin solid var(--red);
+}
+
+.invalid-text{
+    color: var(--red);
+}
+
+.invalid-text.error{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+.contact-form-input:focus{
+    outline: none;
+}
+
+.sending{
+    color: var(--green);
+    padding-bottom: 3em;
 }
 
 .copyright{
@@ -321,6 +365,23 @@ body{
     background-color: var(--white);
 }
 
+.send:hover{
+    background-color: #f00a;
+}
+
+.send:focus{
+    outline: none;
+    background-color: #f008;
+}
+
+.social-list__links:hover{
+    color: #00d8ff;
+}
+
+.social-list__links:active{
+    color: #00d8ffcc;
+}
+
 @media screen and (min-width: 1024px){
     :root{
         --fs-800: 2.5rem;
@@ -347,5 +408,29 @@ body{
     .menu__list:hover{
         background-color: transparent;
         color: var(--pink);
+    }
+
+    .footer{
+        flex-flow: row nowrap;
+        justify-content:center;
+    }
+
+    .social-list{
+        padding: 10em 0;
+    }
+
+    .social-media{
+        width: 50%;
+    }
+
+    .contact-form-container{
+        width: 50%;
+        margin: 0;
+    }
+
+    .copyright{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 }
