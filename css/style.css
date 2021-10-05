@@ -104,7 +104,7 @@ body{
     padding-top: 5rem;
 }
 
-.section-presentation{
+.presentation{
     border-bottom: thin solid var(--grey);
     font-weight: 400;
     color: var(--white);
@@ -112,7 +112,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center/cover url("../assets/campaign-creators-iEiUITs149M-unsplash.jpg");
 }
 
-.section-presentation::after{
+.presentation::after{
     content: "";
     display: block;
     width: 100%;
@@ -120,19 +120,19 @@ body{
     background-color: var(--black);
 }
 
-.article-presentation{
+.presentation__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
 }
 
-.title{
+.presentation-title{
     text-align: center;
     font-size: var(--fs-800);
 }   
 
-.text{
+.presentation-text{
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
@@ -144,7 +144,7 @@ body{
     font-weight: 400;
 }
 
-.btn{
+.presentation-btn{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -234,6 +234,10 @@ body{
 
 .node{
     background-color: #6cc24a;
+}
+
+.card-button:hover{
+    background-color:rgba(26, 24, 24, 0.5);
 }
 
 .footer{
